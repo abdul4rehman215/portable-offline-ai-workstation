@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8080,
+    "corsOrigins": "localhost",
+    "offline": true,
+    "apiKeyEnvironmentVariable": "PORTABLE_AI_API_KEY"
+  },
+  "resourcePolicy": {
+    "maxLoadedHeavyModels": 1,
+    "defaultParallelSlots": 1,
+    "minimumHostSafetyMarginGB": 1.0,
+    "refuseUnsafeLaunch": true
+  },
+  "paths": {
+    "knowledge": "knowledge",
+    "outputs": "workspace/outputs",
+    "logs": "logs"
+  }
+}
