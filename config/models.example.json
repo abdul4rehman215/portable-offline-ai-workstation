@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "notes": "Reference profiles. Only 'fast' was used in the original proof-of-concept. Paths are relative to repository/USB root.",
+  "models": {
+    "fast": {
+      "displayName": "Fast Assistant",
+      "status": "proof-of-concept-tested",
+      "runtime": "llama.cpp",
+      "relativePath": "models/fast/Qwen3-1.7B-Q8_0.gguf",
+      "source": "https://huggingface.co/Qwen/Qwen3-1.7B-GGUF",
+      "ctxSize": 2048,
+      "parallel": 1,
+      "threads": 4,
+      "reasoning": "off",
+      "minFreeRamGB": 3.0
+    },
+    "reasoning": {
+      "displayName": "Deep Reasoning",
+      "status": "designed-not-tested",
+      "runtime": "llama.cpp",
+      "relativePath": "models/reasoning/Qwen3-4B-Q4_K_M.gguf",
+      "source": "https://huggingface.co/Qwen/Qwen3-4B-GGUF",
+      "ctxSize": 4096,
+      "parallel": 1,
+      "threads": 4,
+      "reasoning": "on",
+      "minFreeRamGB": 5.0
+    },
+    "coding": {
+      "displayName": "Coding Assistant",
+      "status": "designed-not-tested",
+      "runtime": "llama.cpp",
+      "relativePath": "models/coding/qwen2.5-coder-3b-instruct-q4_k_m.gguf",
+      "source": "https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct-GGUF",
+      "ctxSize": 4096,
+      "parallel": 1,
+      "threads": 4,
+      "reasoning": "auto",
+      "minFreeRamGB": 4.5
+    },
+    "vision": {
+      "displayName": "Vision / OCR",
+      "status": "designed-not-tested",
+      "runtime": "llama.cpp",
+      "relativePath": "models/vision/Qwen3VL-2B-Instruct-Q4_K_M.gguf",
+      "mmprojRelativePath": "models/vision/mmproj-Qwen3VL-2B-Instruct-Q8_0.gguf",
+      "source": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct-GGUF",
+      "ctxSize": 4096,
+      "parallel": 1,
+      "threads": 4,
+      "reasoning": "auto",
+      "minFreeRamGB": 4.0
+    },
+    "embeddings": {
+      "displayName": "Local RAG Embeddings",
+      "status": "designed-not-tested",
+      "runtime": "llama.cpp",
+      "relativePath": "models/embeddings/Qwen3-Embedding-0.6B-Q8_0.gguf",
+      "source": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B-GGUF",
+      "ctxSize": 2048,
+      "parallel": 1,
+      "threads": 4,
+      "serviceMode": "embedding",
+      "minFreeRamGB": 2.0
+    },
+    "speech": {
+      "displayName": "Voice / Transcription",
+      "status": "designed-not-tested",
+      "runtime": "whisper.cpp",
+      "relativePath": "models/speech/ggml-small.bin",
+      "source": "https://github.com/ggml-org/whisper.cpp",
+      "minFreeRamGB": 1.5
+    }
+  }
+}

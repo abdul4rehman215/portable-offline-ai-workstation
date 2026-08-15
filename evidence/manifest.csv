@@ -1,0 +1,13 @@
+file,category,status,description
+P01_USB_PROPERTIES.png,foundation,tested,29.7 GB exFAT removable drive
+P02_DRIVE_IDENTIFIED.png,foundation,tested,PowerShell identifies removable drive
+P03_FOLDER_STRUCTURE.png,foundation,tested,Portable directory structure
+P04_RUNTIME_VERIFIED.png,runtime,tested,llama.cpp build and SHA-256 evidence
+P05_LOCAL_AI_UI.png,runtime,tested,Browser UI at localhost
+P06_LOCAL_SERVER_RUNNING.png,runtime,tested,First model load/server
+P07_SINGLE_SLOT_SERVER.png,optimization,tested,Context 2048 and one slot
+P08_STALLED_INFERENCE.png,performance,tested,~0.01 token/s captured
+P09_MEMORY_CONSTRAINT.png,performance,tested,~96.8 MB RAM available
+P10_CPU_PROFILE.png,hardware,tested,Intel i5-1135G7
+P11_MEMORY_BASELINE.png,hardware,tested,8 GB RAM baseline
+P12_GPU_PROFILE.png,hardware,tested,Intel Iris Xe

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "name": "llama.cpp Windows CPU runtime ZIP",
+      "status": "verified-in-original-experiment",
+      "version": "build 10437",
+      "file": "llama-b10437-bin-win-cpu-x64.zip",
+      "sha256": "35CD7E1A132FAF669F4D2392AA8C53E2FB78834CE7BAE53E68F7DE1CB35090E0",
+      "source": "https://github.com/ggml-org/llama.cpp/releases",
+      "note": "Checksum captured from the original experiment. Recalculate for any different build."
+    },
+    {
+      "name": "Qwen3-1.7B Q8_0",
+      "status": "loaded-in-original-experiment",
+      "file": "Qwen3-1.7B-Q8_0.gguf",
+      "source": "https://huggingface.co/Qwen/Qwen3-1.7B-GGUF",
+      "sha256": null,
+      "note": "Model hash was not preserved in the supplied evidence; verify it in the next build."
+    }
+  ]
+}
