@@ -1,0 +1,1 @@
+timestamp,mode,model,quantization,model_size_gb,context_size,threads,parallel_slots,load_time_s,ram_before_gb,ram_peak_gb,time_to_first_token_s,tokens_per_second,total_response_time_s,storage_device,notes
